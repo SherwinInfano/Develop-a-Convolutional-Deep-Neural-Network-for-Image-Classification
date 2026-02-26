@@ -143,15 +143,15 @@ def test_model(model, test_loader):
             all_labels.extend(labels.cpu().numpy())
 
     accuracy = correct / total
-    print('Name: Akshaay Vardhan S')
-    print('Register Number: 212224220007')
+    print('Name: Sherwin Infano')
+    print('Register Number: 212224040312')
     print(f'Test Accuracy: {accuracy:.4f}')
 
     # Compute confusion matrix
     cm = confusion_matrix(all_labels, all_preds)
     plt.figure(figsize=(8, 6))
-    print('Name: Akshaay Vardhan S')
-    print('Register Number: 212224220007')
+    print('Name: Sherwin Infano')
+    print('Register Number: 212224040312')
     sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=test_dataset.classes, yticklabels=test_dataset.classes)
     plt.xlabel('Predicted')
     plt.ylabel('Actual')
@@ -187,7 +187,6 @@ def predict_image(model, image_index, dataset):
 
 # Example Prediction
 predict_image(model, image_index=331, dataset=test_dataset)
-
 
 ```
 

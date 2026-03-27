@@ -4,18 +4,34 @@
 To develop a convolutional deep neural network (CNN) for image classification and to verify the response for new images.
 
 ##   PROBLEM STATEMENT AND DATASET
- Develop a convolutional deep neural network (CNN) for image classification and to verify the response for new images.
+Image classification is a fundamental task in computer vision where an input image is assigned to one of several predefined classes. The objective of this experiment is to build and train a Convolutional Neural Network (CNN) using a labeled image dataset and evaluate its performance using accuracy, confusion matrix, and classification report.
+
 ## Neural Network Model
-<img width="1024" height="751" alt="image" src="https://github.com/user-attachments/assets/93bdbae8-0b65-4055-b259-4f5163e8cdfb" />
+Include the neural network model diagram.
+<img width="1300" height="657" alt="image" src="https://github.com/user-attachments/assets/0e9e33bc-e53a-4b8a-bd29-38b7bff06d68" />
+
+
 
 ## DESIGN STEPS
-1.Load and Preprocess Data<br>
-2.Get the shape of the first image in the training dataset<br>
-3.Get the shape of the first image in the test dataset<br>
-4.Train the Model<br>
-5.Test the Model<br>
-6.Predict on a Single Image<br>
-7.Display the image
+
+STEP 1:
+Import the required libraries (torch, torchvision, torch.nn, torch.optim) and load the image dataset with necessary preprocessing like normalization and transformation.
+
+STEP 2:
+Split the dataset into training and testing sets and create DataLoader objects to feed images in batches to the CNN model.
+
+STEP 3:
+Define the CNN architecture using convolutional layers, ReLU activation, max pooling layers, and fully connected layers as implemented in the CNNClassifier class.
+
+STEP 4:
+Initialize the model, define the loss function (CrossEntropyLoss), and choose the optimizer (Adam) for training the network.
+
+STEP 5:
+Train the model using the training dataset by performing forward pass, computing loss, backpropagation, and updating weights for multiple epochs.
+
+STEP 6:
+Evaluate the trained model on test images and verify the classification accuracy for new unseen images.
+
 ## PROGRAM
 
 ### Name: Sherwin Infano
